@@ -42,7 +42,7 @@ fn main() {
                 println!();
             }
         }
-        println!("Would you like to try again? (y/N): ");
+        println!("Would you like to try again? (Y/n): ");
         let prompt: &mut String = &mut String::new();
         stdin().read_line(prompt).expect("failed to read line");
         if let "y\n" | "Y\n" | "yes\n" | "Yes\n" | "YES\n" | "\n" = prompt.as_str() {
